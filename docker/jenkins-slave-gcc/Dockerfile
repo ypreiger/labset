@@ -2,7 +2,7 @@ FROM openshift3/jenkins-slave-base-rhel7:latest
 
 USER root
 
-ENV INSTALL_PKGS="gdb valgrind vim gcc-g++ libstdc++ libstdc++-devel make automake autoconf OpenIPMI OpenIPMI-libs OpenIPMI-modalias fence-agents-ipmilan ipmitool OpenIPMI-devel cppunit cppunit-debuginfo cppunit-devel"
+ENV INSTALL_PKGS="gdb valgrind vim-enhanced gcc-c++ libstdc++ libstdc++-devel make automake autoconf OpenIPMI OpenIPMI-libs OpenIPMI-modalias fence-agents-ipmilan ipmitool OpenIPMI-devel cppunit cppunit-debuginfo cppunit-devel"
 
 RUN yum repolist > /dev/null && \
     yum install -y --setopt=tsflags=nodocs \
