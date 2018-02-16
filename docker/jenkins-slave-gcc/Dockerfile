@@ -6,7 +6,6 @@ ENV INSTALL_PKGS="gdb valgrind vim gcc-g++ libstdc++ libstdc++-devel make automa
 
 RUN yum repolist > /dev/null && \
     yum install -y --setopt=tsflags=nodocs \
-      --enablerepo=rhel-7-server-htb-rpms \
       --enablerepo=rhel-7-server-optional-debug-rpms \
       --enablerepo=rhel-7-server-optional-rpms \
       --enablerepo=rhel-7-server-rpms \
