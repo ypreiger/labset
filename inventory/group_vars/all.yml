@@ -100,6 +100,26 @@ openshift_cluster_content:
     namespace: labs-ci-cd
     tags:
     - hoverfly
+- object: messaging-app
+  content:
+  - name: "mattermost-messaging-db"
+    namespace: "ci-cd"
+    template: "https://raw.githubusercontent.com/springdo/mattermost-ocp/master/mattermost-postgresql.yml"
+    params: "{{ inventory_dir }}/../params/mattermost/postgresql"
+    tags:
+    - messaging
+  - name: "mattermost-messaging-config"
+    namespace: "ci-cd"
+    template: "https://raw.githubusercontent.com/springdo/mattermost-ocp/master/mattermost-config.yml"
+    params: "{{ inventory_dir }}/../params/mattermost/config-map"
+    tags:
+    - messaging
+  - name: "mattermost-messaging-app"
+    namespace: "ci-cd"
+    template: "https://raw.githubusercontent.com/springdo/mattermost-ocp/master/mattermost.yml"
+    params: "{{ inventory_dir }}/../params/mattermost/app"
+    tags:
+    - messaging
 - object: app-builds
   content:
   - name: java-app-build

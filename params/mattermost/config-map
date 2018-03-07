@@ -1,0 +1,8 @@
+SITE_URL=https://mattermost.apps.example.com
+SMTP_PASSWORD=password
+SMTP_USERNAME=noreply.address.mattermost@gmail.com
+GITLAB_OATUH_SECRET=81e3213
+GITLAB_OAUTH_ID=1245612
+GITLAB_URL=gitlab.somesite.com
+POSTGRESQL_PASSWORD=password
+POSTGRESQL_SERVICE=postgresql.ci-cd.svc.cluster.local

@@ -1,0 +1,2 @@
+NAME=mattermost
+VOLUME_CAPACITY=5Gi
