@@ -4,5 +4,5 @@
 # dependencies to support this inventory
 
 # From 'rht-labs/labs-ci-cd'
-- src: https://github.com/rht-labs/labs-ci-cd
+- src: https://github.com/ypreiger/ci-cd-lab
   version: master
